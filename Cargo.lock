@@ -2002,7 +2002,7 @@ dependencies = [
  "forc-tx",
  "forc-util",
  "forc-wallet",
- "fuel-abi-types",
+ "fuel-abi-types 0.6.0",
  "fuel-core-client",
  "fuel-core-types",
  "fuel-crypto",
@@ -2137,7 +2137,7 @@ dependencies = [
  "cid",
  "forc-tracing 0.61.0",
  "forc-util",
- "fuel-abi-types",
+ "fuel-abi-types 0.6.0",
  "futures",
  "git2",
  "gix-url",
@@ -2170,7 +2170,7 @@ version = "0.61.0"
 dependencies = [
  "anyhow",
  "forc-pkg",
- "fuel-abi-types",
+ "fuel-abi-types 0.6.0",
  "fuel-tx",
  "fuel-vm",
  "fuels-core",
@@ -2312,6 +2312,23 @@ name = "fuel-abi-types"
 version = "0.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e0e7e87f94417ff1a5d60e496906033c58bfe5367546621f131fe8cdabaa2671"
+dependencies = [
+ "itertools 0.10.5",
+ "lazy_static",
+ "proc-macro2",
+ "quote",
+ "regex",
+ "serde",
+ "serde_json",
+ "syn 2.0.66",
+ "thiserror",
+]
+
+[[package]]
+name = "fuel-abi-types"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ccb98391d7df3963bc3f30d3c8bfce301573a115fa92a35bed55e4c94b836be2"
 dependencies = [
  "itertools 0.10.5",
  "lazy_static",
@@ -2685,7 +2702,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5c62cf6bfe69581bf806602c45ade998b7f34fb96bbbfc508819d7ae6c4957aa"
 dependencies = [
  "Inflector",
- "fuel-abi-types",
+ "fuel-abi-types 0.5.2",
  "itertools 0.12.1",
  "proc-macro2",
  "quote",
@@ -2703,7 +2720,7 @@ dependencies = [
  "async-trait",
  "bech32",
  "chrono",
- "fuel-abi-types",
+ "fuel-abi-types 0.5.2",
  "fuel-asm",
  "fuel-core-chain-config",
  "fuel-core-client",
@@ -2742,7 +2759,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4c75f67cf51f7ea66978828a9e2729c69819e1b43865afe372450ba25973c66a"
 dependencies = [
  "async-trait",
- "fuel-abi-types",
+ "fuel-abi-types 0.5.2",
  "fuel-asm",
  "fuel-tx",
  "fuel-types",
@@ -6551,7 +6568,7 @@ dependencies = [
  "derivative",
  "dirs 3.0.2",
  "either",
- "fuel-abi-types",
+ "fuel-abi-types 0.6.0",
  "fuel-ethabi",
  "fuel-etk-asm",
  "fuel-etk-ops",
